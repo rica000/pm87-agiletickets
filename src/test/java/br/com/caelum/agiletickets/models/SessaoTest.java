@@ -7,7 +7,7 @@ public class SessaoTest {
 
 
 	@Test
-	public void deveVender1ingressoSeHa2vagas() throws Exception {
+	public void deveVender1ingressoSeHa2vagasMesmo() throws Exception {
 		Sessao sessao = new Sessao();
         sessao.setTotalIngressos(2);
 
