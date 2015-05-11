@@ -1,5 +1,8 @@
 package br.com.caelum.agiletickets.models;
 
+import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
+import org.joda.time.LocalTime;
 import org.junit.Assert;
 import org.junit.Test;
 

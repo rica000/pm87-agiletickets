@@ -48,8 +48,8 @@ public class CalculadoraDePrecosTest {
 				.comIngressoReservados(10)
 				.comOPreco(20.0)
 				.build();
-
 		BigDecimal precoTotal = CalculadoraDePrecos.calcula(sessao, 1);
+				System.out.println(precoTotal);
 		
 		assertEquals(0, BigDecimal.valueOf(20.0).compareTo(precoTotal));
 	}
@@ -138,7 +138,7 @@ public class CalculadoraDePrecosTest {
 				.umaSessao()
 				.deUmEspetaculoDoTipo(TipoDeEspetaculo.ORQUESTRA)
 				.comTotalIngressos(70)
-				.comIngressoReservados(40)
+				.comIngressoReservados(65)
 				.comOPreco(1000.0)
 				.comDuracaoEmMinutos(60)
 				.build();
@@ -176,7 +176,8 @@ public class CalculadoraDePrecosTest {
 				.build();
 
 		BigDecimal precoTotal = CalculadoraDePrecos.calcula(sessao, 1);
-		
+		System.out.println(precoTotal);
+
 		assertEquals(0, BigDecimal.valueOf(1300.0).compareTo(precoTotal));
 	}
 	
@@ -189,7 +190,6 @@ public class CalculadoraDePrecosTest {
 				.build();
 		
 		BigDecimal precoTotal = CalculadoraDePrecos.calcula(sessao, 1);
-		
 		assertEquals(0, BigDecimal.valueOf(10.0).compareTo(precoTotal));
 	}
 
